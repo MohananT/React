@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/convert', convertRoute);
+app.use('/api/convertImgtoTxt', convertRoute);
 
 // middleware to catch error
 // catch 404 and forward to error handler
